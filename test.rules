@@ -40,7 +40,7 @@ alert dns any any -> any any (msg:"mtbucks rules"; dns_query; content:"mtbucks";
 alert dns any any -> any any (msg:"phishtank rules"; dns_query; content:"phishtank"; nocase; sid:1909;)
 alert dns any any -> any any (msg:"hitomi.la rules"; dns_query; content:"hitomi.la"; nocase; sid:1910;)
 
-### no block...
+### cannot block site...
 ### https://www.facebook.com/profile.php?id=100019007882633
 ### https://www.opioids.com/offshorepharmacy/index.html
 ### https://yobit.net/en/dice/
