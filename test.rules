@@ -24,7 +24,7 @@ alert tcp any any -> any 80 (msg:"linoit.com rule"; content:"GET /users/men1212/
 alert tcp any any -> any 80 (msg:"named.com/game/ladder/v2_index.php rule"; content:"Host: named.com"; content:"GET /game/ladder/v2_index.php"; sid:25; rev:1;)
 alert tcp any any -> any 80 (msg:"kitribob.wiki/wiki rule"; content:"Host: kitribob.wiki"; content:"GET /wiki"; sid:26; rev:1;)
 alert tcp any any -> any 80 (msg:"snoopspy.com/download rule"; content:"Host: snoopspy.com"; content:"GET /download"; sid:27; rev:1;)
-alert tcp any any -> any any (msg:"test.gilgil.net rule"; content:".mp4";content: "Host: test.gilgil.net"; sid:28; rev:1;)
+alert tcp any any -> any any (msg:"test.gilgil.net rule"; content:"GET /streaming/test.mp4 HTTP";content: "Host: test.gilgil.net"; sid:28; rev:1;)
 alert tcp any any -> any 80 (msg:"naver.cm rule"; content:"Host: naver.cm";sid:30; rev:1;)
 alert tcp any any -> any 80 (msg:"winclub88 rule"; content:"Host: www.winclub88.net"; content:"GET /my/4D.html"; sid:31; rev:1;)
 
